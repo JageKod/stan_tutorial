@@ -21,9 +21,13 @@ rstan_options(auto_write = TRUE)
 
 date <- as.character(Sys.Date())
 
-experiment <- 'all_but_last_cycle'
+# ---- Parameters to infer the parameters for the desired experiment ---------
 
-number_of_patients <- 10
+experiment <- 'all_but_last_cycle' # 'all_but_last_cycle' or 'first_cycle'
+
+number_of_patients <- 10  # only 10 available on github
+
+# --------------------------------------------------------------------------
 
 inputdatafile_PSA <- sprintf('%s_%d_PSA_df.csv', experiment, number_of_patients)
 inputdatafile_day <- sprintf('%s_%d_day_df.csv', experiment, number_of_patients)

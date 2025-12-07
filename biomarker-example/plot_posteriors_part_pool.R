@@ -6,11 +6,10 @@ library(rstan)
 
 
 # Parameters to load the wanted stan-fit
-date <- '2025-04-17'
+date <- '2025-04-17' # only 2025-04-17 is available on github
+experiment <- 'all_but_last_cycle' # 'all_but_last_cycle' or 'first_cycle'
+number_of_patients <- 10 # only 10 is available on github
 
-experiment <- 'all_but_last_cycle'
-
-number_of_patients <- 10
 
 # Maximum x-values, edit to make nice plots
 ps_max <- 0.075

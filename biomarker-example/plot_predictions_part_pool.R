@@ -17,10 +17,11 @@ library(gridExtra)
 #----------------- USER INPUTS ---------------------------------------------------------
 
 
-# Parameters to load the wanted stan-fit. Default values are the only available on github
-date <- '2025-04-17'
-experiment <- 'all_but_last_cycle'
-number_of_patients <- 10
+# Parameters to load the wanted stan-fit.
+date <- '2025-04-17' # only 2025-04-17 is available on github
+experiment <- 'all_but_last_cycle' # 'all_but_last_cycle' or 'first_cycle'
+number_of_patients <- 10 # only 10 is available on github
+
 
 
 # specific patients to plot, patients 1, 4, 13, 14, 15, 17, 24, 26, 28, 29 are available
